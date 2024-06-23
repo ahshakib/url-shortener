@@ -14,7 +14,7 @@ const UrlShortener = () => {
   };
 
   const handleCopy = (shortUrl) => {
-    navigator.clipboard.writeText(`https://url-shortener-tzya.onrender.com/${shortUrl}`).then(() => {
+    navigator.clipboard.writeText(`https://url-shortener-fj69.onrender.com/${shortUrl}`).then(() => {
       alert('Copied to clipboard!');
     }, (err) => {
       console.error('Failed to copy: ', err);
@@ -48,7 +48,7 @@ const UrlShortener = () => {
             <p className="text-gray-800">Original: {url.originalUrl}</p>
             <div className="flex items-center">
               <p className="text-teal-500">
-                Shortened: <a href={`https://url-shortener-tzya.onrender.com/${url.shortUrl}`} target="_blank" rel="noopener noreferrer">{`http://localhost:5000/${url.shortUrl}`}</a>
+                Shortened: <a href={`https://url-shortener-fj69.onrender.com/${url.shortUrl}`} target="_blank" rel="noopener noreferrer">{`https://url-shortener-fj69.onrender.com/${url.shortUrl}`}</a>
               </p>
               <button
                 className="ml-4 bg-teal-500 hover:bg-teal-700 text-white font-bold py-1 px-2 rounded"

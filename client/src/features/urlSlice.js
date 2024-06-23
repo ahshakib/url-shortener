@@ -2,7 +2,7 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
 export const shortenUrl = createAsyncThunk('url/shortenUrl', async (originalUrl) => {
-  const response = await axios.post('https://url-shortener-tzya.onrender.com/api/shorten', { originalUrl });
+  const response = await axios.post('https://url-shortener-fj69.onrender.com/api/shorten', { originalUrl });
   return response.data;
 });
 
