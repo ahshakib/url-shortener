@@ -31,6 +31,10 @@ const corsOptions = {
   origin: 'https://url-shortener-one-bice.vercel.app', // Replace with your frontend URL
   optionsSuccessStatus: 200,
 };
+app.use((req, res, next) => {
+  console.log(`${req.method} ${req.path}`);
+  next();
+});
 
 app.use(cors(corsOptions));
 
