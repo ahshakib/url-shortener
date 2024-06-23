@@ -28,7 +28,7 @@ const urlSchema = new mongoose.Schema({
 const Url = mongoose.model('Url', urlSchema);
 
 const corsOptions = {
-  origin: 'https://url-shortener-one-bice.vercel.app', // Replace with your frontend URL
+  origin: '*', // Replace with your frontend URL
   optionsSuccessStatus: 200
 };
 
