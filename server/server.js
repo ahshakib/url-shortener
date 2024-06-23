@@ -28,7 +28,7 @@ const urlSchema = new mongoose.Schema({
 const Url = mongoose.model('Url', urlSchema);
 
 app.use(cors({
-  origin: 'http://localhost:5173' // Adjust this based on your frontend's address
+  origin: 'https://url-shortener-one-bice.vercel.app/' // Adjust this based on your frontend's address
 }));
 
 app.use(express.json());
